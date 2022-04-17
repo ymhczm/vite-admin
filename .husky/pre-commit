@@ -1,0 +1,13 @@
+###
+ # @Descripttion: 执行操作
+ # @version: 1.0.0
+ # @Author: null
+ # @Date: 2021-06-30 16:03:56
+ # @LastEditors: sueRimn
+ # @LastEditTime: 2022-04-17 08:12:59
+### 
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx lint-staged
+yarn run build
